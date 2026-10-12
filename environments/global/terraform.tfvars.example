@@ -1,0 +1,4 @@
+# Copy to terraform.tfvars and set a globally-unique bucket name (S3 bucket names are unique
+# across all of AWS, not just your account) before running terraform init/apply here.
+aws_region        = "us-east-1"
+state_bucket_name = "assura-tfstate-CHANGE-ME"

@@ -1,0 +1,12 @@
+title = "assura-infra gitleaks config"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Terraform state/plan output and placeholder ARNs are not real secrets"
+paths = [
+  '''.*\.tfstate''',
+  '''backend\.hcl\.example''',
+  '''terraform\.tfvars\.example''',
+]
